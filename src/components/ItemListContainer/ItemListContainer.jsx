@@ -1,4 +1,4 @@
-import Cards from '../CartWidget/Cards/Cards'
+import Cards from '../Cards/Cards'
 import './ItemListContainer.css'
 import products from '../../assets/products/products.js'
 

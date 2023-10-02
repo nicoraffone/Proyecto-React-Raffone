@@ -27,3 +27,9 @@
     font-size: 23px;
 }
 
+.card-button{
+    margin-bottom: 30px;
+    background-color: rgb(109, 74, 167);
+    padding: 7px;
+    border-radius: 50px;
+}
