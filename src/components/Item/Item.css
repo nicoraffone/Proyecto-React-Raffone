@@ -23,6 +23,11 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     height: 50%;
+    transition: 1s;
+}
+
+.cards img:hover{
+    transform: scale(1.1);
 }
 
 .cards p{

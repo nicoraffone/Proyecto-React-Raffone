@@ -36,7 +36,7 @@ const ItemListContainer = () => {
                 <>
                 {productos.map(product => <Item product={product} key={product.id}/>)}  
                 </>) : (
-                    <span class="loader"></span>
+                    <span className="loader"></span>
                 )}
             </div>
         </div>
