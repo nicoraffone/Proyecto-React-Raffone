@@ -13,7 +13,7 @@ function App() {
     <NavBar/>
 
       <Routes>
-        <Route exact path='*' element={<NotFound/>}/>
+        <Route exact path='/*' element={<NotFound/>}/>
         <Route exact path='/' element={<Home/>} />
         <Route exact path="/products" element={<ItemListContainer />} />
         <Route exact path='/category/:categoryName' element={<ItemListContainer />} />
