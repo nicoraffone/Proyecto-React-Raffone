@@ -8,8 +8,8 @@ const Item = ({product}) => {
             <div>
                 <h4>{product.title}</h4>
                 <p>Precio: USD ${product.price}</p>
-                <p>Categoria: {product.category}</p>
-                <Link className='ver-mas' to={`/products/${product.id}`}>Ver Más</Link>
+                <p>Categoria: {product.categoryId}</p>
+                <Link className='ver-mas' to={`/item/${product.id}`}>Ver Más</Link>
             </div>
         </div>
     )

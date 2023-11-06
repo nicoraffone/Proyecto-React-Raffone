@@ -26,17 +26,16 @@ const NavBar = () => {
           <ul className="dropdown-menu">
             <li><Link to={'/products'} className='dropdown-item'>Todos</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><Link to={'/category/jewelery'} className='dropdown-item'>Joyas</Link></li>
+            <li><Link to={'/products/Accesorios'} className='dropdown-item'>Accesorios</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><Link to={"/category/men's%20clothing"} className='dropdown-item'>Ropa de Hombre</Link></li>
+            <li><Link to={"/products/Shorts"} className='dropdown-item'>Shorts</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><Link to={"/category/electronics"} className='dropdown-item'>Electrónica</Link></li>
+            <li><Link to={"/products/Hoodie"} className='dropdown-item'>Hoodies</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><Link to={"/category/women's%20clothing"} className='dropdown-item'>Ropa de Mujer</Link></li>
+            <li><Link to={"/products/Jordans"} className='dropdown-item'>Jordans</Link></li>
+            <li><hr className="dropdown-divider"/></li>
+            <li><Link to={"/products/Sweater"} className='dropdown-item'>Sweaters</Link></li>
           </ul>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Contacto</a>
         </li>
       </ul>
       <CartWidget/>
