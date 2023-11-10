@@ -34,12 +34,6 @@
     font-size: 20px;
 }
 
-.details-buttons{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-}
-
 .details-buttons button{
     width: 35px;
     background-color: rgb(109, 74, 167);
@@ -67,6 +61,26 @@
     color: white;
     font-size: 18px;
     background-color: rgb(21, 82, 21);
+    border-radius: 5px;
+    padding: 11px;
+}
+
+.empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty h2{
+    margin: 40px 0;
+}
+
+.empty a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(109, 74, 167);
     border-radius: 5px;
     padding: 11px;
 }

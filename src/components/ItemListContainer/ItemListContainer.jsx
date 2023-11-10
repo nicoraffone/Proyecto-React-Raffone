@@ -24,9 +24,11 @@ const ItemListContainer = () => {
                 })
             )
         })
+        setTitulo(
+            categoria
+        )
 
     }, [categoria])
-
 
     return(
         <div>

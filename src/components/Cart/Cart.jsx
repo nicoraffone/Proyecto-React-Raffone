@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 
 const Cart = () => {
 
-    const { cart, totalPrice, emptyCart } = useContext(CartContext)
+    const { cart, totalPrice, emptyCart, deleteProduct } = useContext(CartContext)
 
     return (
         <div className="cart-container">
-            <h1 className="">Carrito</h1>
+            <h1 className="">Carrito de compras</h1>
 
         <div className="cart-products">
             {
@@ -22,8 +22,7 @@ const Cart = () => {
                         <p>Precio total: ${prod.price * prod.quantity}</p>
                         <p>Cantidad: {prod.quantity}</p>
                         <div className="details-buttons">
-                            <button>-</button>
-                            <button>x</button>
+                            <button onClick={() => deleteProduct(prod.id)}>x</button>
                         </div>
                         </div>
                     </div>
@@ -38,7 +37,10 @@ const Cart = () => {
                     <Link to="/checkout">Finalizar compra</Link>
                 </div>
                 </> :
+                <div className="empty">
                 <h2>El carrito esta vacio</h2>
+                <Link to="/products" >Volver a la tienda</Link>
+                </div>
             }
         </div>
     )
