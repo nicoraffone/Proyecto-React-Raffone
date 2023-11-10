@@ -33,6 +33,7 @@ const Cart = () => {
                 <>
                     <h2>Precio total: ${totalPrice()}</h2>
                 <div className="cart-buy">
+                    <Link to="/products" >Ver más productos</Link>
                     <button onClick={emptyCart}>Vaciar carrito</button>
                     <Link to="/checkout">Finalizar compra</Link>
                 </div>

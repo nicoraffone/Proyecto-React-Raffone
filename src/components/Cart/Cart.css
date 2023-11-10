@@ -65,6 +65,11 @@
     padding: 11px;
 }
 
+.cart-buy a:nth-of-type(1){
+    margin-right: 40px;
+    background-color: rgb(109, 74, 167)
+}
+
 .empty{
     display: flex;
     flex-direction: column;
