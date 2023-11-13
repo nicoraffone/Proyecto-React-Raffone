@@ -41,3 +41,12 @@
     margin: 30px 0;
     font-size: 20px;
 }
+
+.order-fin a{
+    background-color: rgb(109, 74, 167);
+    font-size: 20px;
+    border-radius: 9px;
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+}

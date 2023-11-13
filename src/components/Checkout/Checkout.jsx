@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form"
 import { collection, addDoc  } from "firebase/firestore"
 import { db } from "../../firebase/client"
 import './Checkout.css'
+import { Link } from "react-router-dom"
 
 const Checkout = () => {
 
@@ -32,7 +33,9 @@ const Checkout = () => {
         return(
             <div className="order-fin">
                 <h1>Muchas gracias por tu compra!</h1>
-                <p>Tu numero de pedido es: {orderId}</p>
+                <p>Te contactaremos via email para coordinar la entrega en 2 dias hábiles.</p>
+                <p>Tu número de pedido es: {orderId}</p>
+                <Link to="/products">Volver a la tienda</Link>
             </div>
         )
     }
